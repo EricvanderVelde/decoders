@@ -16,10 +16,10 @@ OBJ=$(ODIR)/main.o \
     $(ODIR)/Logger.o
 
 
-libs=-lasound -lfftw3f
+libs=-lasound 
 lib_path=-L$(HOME)/lib
 
-libs_static=../libFSKDecoder/libFSKDecoder.a
+libs_static=../libFSKDecoder/libFSKDecoder.a /usr/lib/x86_64-linux-gnu/libfftw3f.a
 
 all : $(ODIR) $(progname) ok
 
